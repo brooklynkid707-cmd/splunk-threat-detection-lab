@@ -1,0 +1,136 @@
+{
+  "planted": [
+    {
+      "detection_id": "TDL-001",
+      "scenario": "win_brute_force",
+      "summary": "60 failed logons against one account from one external IP in three minutes"
+    },
+    {
+      "detection_id": "TDL-002",
+      "scenario": "password_spray",
+      "summary": "one failed logon each against 30 accounts from one IP in eight minutes"
+    },
+    {
+      "detection_id": "TDL-003",
+      "scenario": "impossible_travel",
+      "summary": "VPN logons for the same user from the US and Brazil 15 minutes apart"
+    },
+    {
+      "detection_id": "TDL-004",
+      "scenario": "new_admin",
+      "summary": "account created and added to Administrators within a minute"
+    },
+    {
+      "detection_id": "TDL-005",
+      "scenario": "rdp_lateral",
+      "summary": "one user RDPs to six servers in 25 minutes"
+    },
+    {
+      "detection_id": "TDL-006",
+      "scenario": "smb_lateral",
+      "summary": "one workstation opens SMB to 12 peers in four minutes"
+    },
+    {
+      "detection_id": "TDL-007",
+      "scenario": "ps_encoded",
+      "summary": "Word launches PowerShell with an -Enc Base64 payload"
+    },
+    {
+      "detection_id": "TDL-008",
+      "scenario": "schtask",
+      "summary": "interactive user creates a scheduled task outside the Microsoft tree"
+    },
+    {
+      "detection_id": "TDL-009",
+      "scenario": "dns_tunnel",
+      "summary": "40 very long TXT queries to one base domain"
+    },
+    {
+      "detection_id": "TDL-010",
+      "scenario": "dns_subdomains",
+      "summary": "150 distinct subdomains of one zone in eight minutes"
+    },
+    {
+      "detection_id": "TDL-011",
+      "scenario": "beacon",
+      "summary": "40 outbound connections on a 60-second timer to a listed C2 address"
+    },
+    {
+      "detection_id": "TDL-012",
+      "scenario": "office_shell",
+      "summary": "Excel spawns cmd.exe and a script host"
+    },
+    {
+      "detection_id": "TDL-013",
+      "scenario": "rare_parent_child",
+      "summary": "mshta.exe spawns rundll32.exe"
+    },
+    {
+      "detection_id": "TDL-014",
+      "scenario": "lsass_access",
+      "summary": "unknown binary opens lsass.exe with dump-capable access masks"
+    },
+    {
+      "detection_id": "TDL-015",
+      "scenario": "log_cleared",
+      "summary": "wevtutil clears the Security log (1102 follows)"
+    },
+    {
+      "detection_id": "TDL-016",
+      "scenario": "rare_port",
+      "summary": "outbound connections on TCP 4444"
+    },
+    {
+      "detection_id": "TDL-017",
+      "scenario": "threat_intel_ip",
+      "summary": "traffic to an address on the known-bad feed"
+    },
+    {
+      "detection_id": "TDL-018",
+      "scenario": "exfil_volume",
+      "summary": "one host uploads ~520 MB in one hour"
+    },
+    {
+      "detection_id": "TDL-019",
+      "scenario": "runas_admin",
+      "summary": "runas /user:CORP\\administrator from a workstation"
+    },
+    {
+      "detection_id": "TDL-020",
+      "scenario": "ssh_brute",
+      "summary": "40 SSH failures from one IP against the bastion"
+    },
+    {
+      "detection_id": "TDL-021",
+      "scenario": "ssh_success_after_failures",
+      "summary": "eight SSH failures followed by a password success"
+    },
+    {
+      "detection_id": "TDL-022",
+      "scenario": "linux_sudo_user",
+      "summary": "useradd followed by usermod into the sudo group"
+    },
+    {
+      "detection_id": "TDL-023",
+      "scenario": "unsigned_dll",
+      "summary": "unsigned DLL loaded from a Temp directory"
+    },
+    {
+      "detection_id": "TDL-024",
+      "scenario": "startup_folder",
+      "summary": "PowerShell writes a .lnk into the Startup folder"
+    },
+    {
+      "detection_id": "TDL-025",
+      "scenario": "lolbin_dns",
+      "summary": "powershell.exe issues DNS queries for staging domains"
+    }
+  ],
+  "files": {
+    "windows_security.log": 1065,
+    "sysmon.log": 2366,
+    "linux_auth.log": 419,
+    "firewall.log": 2854,
+    "dns.log": 3560
+  }
+}

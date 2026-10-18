@@ -1,0 +1,23 @@
+# Application-level permissions: readable by everyone, writable by admin/power,
+# and all knowledge objects exported so the macros and lookups are usable
+# from other apps (e.g. Search & Reporting or Enterprise Security).
+[]
+access = read : [ * ], write : [ admin, power ]
+export = system
+
+[savedsearches]
+access = read : [ * ], write : [ admin, power ]
+export = system
+
+[lookups]
+access = read : [ * ], write : [ admin, power ]
+export = system
+
+[macros]
+export = system
+
+[eventtypes]
+export = system
+
+[views]
+export = system

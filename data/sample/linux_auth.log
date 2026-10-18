@@ -1,0 +1,419 @@
+2026-10-14T00:15:28+00:00 srv-web-01 sshd[2695]: Failed password for invalid user test from 192.0.2.103 port 45386 ssh2
+2026-10-14T00:15:31+00:00 srv-web-01 sshd[2718]: Failed password for invalid user ubuntu from 192.0.2.103 port 28052 ssh2
+2026-10-14T00:17:00+00:00 srv-web-01 CRON[2735]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T00:20:23+00:00 srv-bastion-01 sshd[2628]: Failed password for invalid user ubuntu from 203.0.113.206 port 58440 ssh2
+2026-10-14T00:36:22+00:00 srv-app-01 sshd[2556]: Accepted publickey for akim from 10.20.2.49 port 61953 ssh2
+2026-10-14T00:36:23+00:00 srv-app-01 sshd[2593]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T00:37:56+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T00:43:34+00:00 srv-db-01 sshd[2507]: Accepted publickey for mchen from 10.20.2.49 port 39227 ssh2
+2026-10-14T00:43:34+00:00 srv-db-01 sshd[2530]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T00:57:57+00:00 srv-bastion-01 sshd[2650]: Failed password for invalid user test from 192.0.2.173 port 50665 ssh2
+2026-10-14T00:58:00+00:00 srv-bastion-01 sshd[2680]: Failed password for invalid user oracle from 192.0.2.173 port 45692 ssh2
+2026-10-14T01:05:15+00:00 srv-db-01 sshd[4305]: Accepted publickey for mchen from 10.20.2.49 port 49558 ssh2
+2026-10-14T01:05:16+00:00 srv-db-01 sshd[4318]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T01:07:38+00:00 srv-db-01 sshd[4355]: Accepted publickey for mchen from 10.20.2.49 port 25940 ssh2
+2026-10-14T01:07:39+00:00 srv-db-01 sshd[4356]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T01:12:17+00:00 srv-db-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T01:17:00+00:00 srv-app-01 CRON[4409]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T01:31:11+00:00 srv-web-01 sshd[4357]: Failed password for invalid user admin from 192.0.2.140 port 26931 ssh2
+2026-10-14T01:48:58+00:00 srv-web-01 sshd[4387]: Failed password for invalid user test from 192.0.2.158 port 33781 ssh2
+2026-10-14T01:49:01+00:00 srv-web-01 sshd[4406]: Failed password for invalid user test from 192.0.2.158 port 40441 ssh2
+2026-10-14T02:05:38+00:00 srv-web-01 sshd[5974]: Failed password for invalid user oracle from 192.0.2.115 port 53774 ssh2
+2026-10-14T02:05:41+00:00 srv-web-01 sshd[6005]: Failed password for invalid user oracle from 192.0.2.115 port 46664 ssh2
+2026-10-14T02:17:00+00:00 srv-bastion-01 CRON[6028]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T02:18:40+00:00 srv-web-01 sshd[6022]: Failed password for invalid user oracle from 203.0.113.208 port 58634 ssh2
+2026-10-14T02:46:28+00:00 srv-web-01 sshd[5906]: Accepted publickey for akim from 10.20.2.49 port 5193 ssh2
+2026-10-14T02:46:29+00:00 srv-web-01 sshd[5933]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T02:58:47+00:00 srv-app-01 sshd[5945]: Accepted publickey for rpatel from 10.20.2.49 port 12777 ssh2
+2026-10-14T02:58:47+00:00 srv-app-01 sshd[5947]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T03:06:20+00:00 srv-app-01 sshd[7558]: Accepted publickey for jwalker from 10.20.2.49 port 56141 ssh2
+2026-10-14T03:06:20+00:00 srv-app-01 sshd[7560]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T03:14:06+00:00 srv-web-01 sshd[7568]: Failed password for invalid user test from 203.0.113.240 port 59839 ssh2
+2026-10-14T03:14:09+00:00 srv-web-01 sshd[7597]: Failed password for invalid user admin from 203.0.113.240 port 64987 ssh2
+2026-10-14T03:17:00+00:00 srv-db-01 CRON[7705]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T03:42:41+00:00 srv-web-01 sshd[7538]: Accepted publickey for mchen from 10.20.2.49 port 11846 ssh2
+2026-10-14T03:42:41+00:00 srv-web-01 sshd[7547]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T03:45:28+00:00 srv-web-01 sshd[7647]: Failed password for invalid user ubuntu from 203.0.113.219 port 35230 ssh2
+2026-10-14T03:45:31+00:00 srv-web-01 sshd[7676]: Failed password for invalid user test from 203.0.113.219 port 38450 ssh2
+2026-10-14T03:46:45+00:00 srv-web-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T03:48:55+00:00 srv-web-01 sshd[7614]: Failed password for invalid user oracle from 192.0.2.193 port 59623 ssh2
+2026-10-14T04:17:00+00:00 srv-bastion-01 CRON[9381]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T04:17:28+00:00 srv-web-01 sshd[9369]: Failed password for invalid user test from 203.0.113.221 port 13131 ssh2
+2026-10-14T04:20:00+00:00 srv-bastion-01 sshd[78062]: Failed password for invalid user deploy from 192.0.2.77 port 13378 ssh2
+2026-10-14T04:20:09+00:00 srv-bastion-01 sshd[78077]: Failed password for admin from 192.0.2.77 port 57441 ssh2
+2026-10-14T04:20:18+00:00 srv-bastion-01 sshd[78106]: Failed password for ubuntu from 192.0.2.77 port 38068 ssh2
+2026-10-14T04:20:27+00:00 srv-bastion-01 sshd[78113]: Failed password for invalid user ubuntu from 192.0.2.77 port 58416 ssh2
+2026-10-14T04:20:36+00:00 srv-bastion-01 sshd[78153]: Failed password for root from 192.0.2.77 port 17612 ssh2
+2026-10-14T04:20:45+00:00 srv-bastion-01 sshd[78157]: Failed password for admin from 192.0.2.77 port 42713 ssh2
+2026-10-14T04:20:54+00:00 srv-bastion-01 sshd[78170]: Failed password for invalid user deploy from 192.0.2.77 port 25874 ssh2
+2026-10-14T04:21:03+00:00 srv-bastion-01 sshd[78187]: Failed password for deploy from 192.0.2.77 port 46495 ssh2
+2026-10-14T04:21:12+00:00 srv-bastion-01 sshd[78218]: Failed password for admin from 192.0.2.77 port 40679 ssh2
+2026-10-14T04:21:21+00:00 srv-bastion-01 sshd[78219]: Failed password for invalid user ubuntu from 192.0.2.77 port 38555 ssh2
+2026-10-14T04:21:30+00:00 srv-bastion-01 sshd[78255]: Failed password for ubuntu from 192.0.2.77 port 64123 ssh2
+2026-10-14T04:21:39+00:00 srv-bastion-01 sshd[78281]: Failed password for root from 192.0.2.77 port 27650 ssh2
+2026-10-14T04:21:48+00:00 srv-bastion-01 sshd[78317]: Failed password for invalid user admin from 192.0.2.77 port 46620 ssh2
+2026-10-14T04:21:57+00:00 srv-bastion-01 sshd[78355]: Failed password for admin from 192.0.2.77 port 47676 ssh2
+2026-10-14T04:22:06+00:00 srv-bastion-01 sshd[78391]: Failed password for ubuntu from 192.0.2.77 port 10436 ssh2
+2026-10-14T04:22:15+00:00 srv-bastion-01 sshd[78399]: Failed password for invalid user root from 192.0.2.77 port 15410 ssh2
+2026-10-14T04:22:24+00:00 srv-bastion-01 sshd[78405]: Failed password for deploy from 192.0.2.77 port 16229 ssh2
+2026-10-14T04:22:33+00:00 srv-bastion-01 sshd[78416]: Failed password for ubuntu from 192.0.2.77 port 10779 ssh2
+2026-10-14T04:22:42+00:00 srv-bastion-01 sshd[78441]: Failed password for invalid user root from 192.0.2.77 port 55349 ssh2
+2026-10-14T04:22:51+00:00 srv-bastion-01 sshd[78461]: Failed password for admin from 192.0.2.77 port 10275 ssh2
+2026-10-14T04:23:00+00:00 srv-bastion-01 sshd[78480]: Failed password for deploy from 192.0.2.77 port 40516 ssh2
+2026-10-14T04:23:09+00:00 srv-bastion-01 sshd[78489]: Failed password for invalid user deploy from 192.0.2.77 port 20605 ssh2
+2026-10-14T04:23:18+00:00 srv-bastion-01 sshd[78529]: Failed password for deploy from 192.0.2.77 port 39955 ssh2
+2026-10-14T04:23:27+00:00 srv-bastion-01 sshd[78553]: Failed password for root from 192.0.2.77 port 14309 ssh2
+2026-10-14T04:23:36+00:00 srv-bastion-01 sshd[78568]: Failed password for invalid user ubuntu from 192.0.2.77 port 20757 ssh2
+2026-10-14T04:23:45+00:00 srv-bastion-01 sshd[78587]: Failed password for admin from 192.0.2.77 port 24500 ssh2
+2026-10-14T04:23:54+00:00 srv-bastion-01 sshd[78623]: Failed password for admin from 192.0.2.77 port 29905 ssh2
+2026-10-14T04:24:03+00:00 srv-bastion-01 sshd[78651]: Failed password for invalid user ubuntu from 192.0.2.77 port 45888 ssh2
+2026-10-14T04:24:12+00:00 srv-bastion-01 sshd[78665]: Failed password for deploy from 192.0.2.77 port 10532 ssh2
+2026-10-14T04:24:21+00:00 srv-bastion-01 sshd[78703]: Failed password for deploy from 192.0.2.77 port 36095 ssh2
+2026-10-14T04:24:30+00:00 srv-bastion-01 sshd[78731]: Failed password for invalid user deploy from 192.0.2.77 port 27794 ssh2
+2026-10-14T04:24:39+00:00 srv-bastion-01 sshd[78758]: Failed password for admin from 192.0.2.77 port 2569 ssh2
+2026-10-14T04:24:48+00:00 srv-bastion-01 sshd[78775]: Failed password for root from 192.0.2.77 port 42395 ssh2
+2026-10-14T04:24:57+00:00 srv-bastion-01 sshd[78811]: Failed password for invalid user ubuntu from 192.0.2.77 port 61034 ssh2
+2026-10-14T04:25:06+00:00 srv-bastion-01 sshd[78840]: Failed password for admin from 192.0.2.77 port 41181 ssh2
+2026-10-14T04:25:15+00:00 srv-bastion-01 sshd[78858]: Failed password for deploy from 192.0.2.77 port 36331 ssh2
+2026-10-14T04:25:24+00:00 srv-bastion-01 sshd[78885]: Failed password for invalid user root from 192.0.2.77 port 31785 ssh2
+2026-10-14T04:25:33+00:00 srv-bastion-01 sshd[78894]: Failed password for root from 192.0.2.77 port 19028 ssh2
+2026-10-14T04:25:42+00:00 srv-bastion-01 sshd[78910]: Failed password for ubuntu from 192.0.2.77 port 61270 ssh2
+2026-10-14T04:25:51+00:00 srv-bastion-01 sshd[78940]: Failed password for invalid user ubuntu from 192.0.2.77 port 17832 ssh2
+2026-10-14T04:40:42+00:00 srv-app-01 sshd[9318]: Accepted publickey for akim from 10.20.2.49 port 55341 ssh2
+2026-10-14T04:40:43+00:00 srv-app-01 sshd[9322]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T04:40:59+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T04:53:00+00:00 srv-bastion-01 sshd[9336]: Accepted publickey for jwalker from 10.20.2.49 port 61421 ssh2
+2026-10-14T04:53:01+00:00 srv-bastion-01 sshd[9342]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T04:54:44+00:00 srv-bastion-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T05:11:04+00:00 srv-bastion-01 sshd[10878]: Failed password for invalid user ubuntu from 192.0.2.121 port 10788 ssh2
+2026-10-14T05:11:07+00:00 srv-bastion-01 sshd[10903]: Failed password for invalid user oracle from 192.0.2.121 port 56106 ssh2
+2026-10-14T05:11:17+00:00 srv-db-01 sshd[10834]: Accepted publickey for jwalker from 10.20.2.49 port 48529 ssh2
+2026-10-14T05:11:17+00:00 srv-db-01 sshd[10842]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T05:12:34+00:00 srv-db-01 sshd[10797]: Accepted publickey for mchen from 10.20.2.49 port 5266 ssh2
+2026-10-14T05:12:35+00:00 srv-db-01 sshd[10827]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T05:14:22+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T05:14:38+00:00 srv-db-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T05:17:00+00:00 srv-app-01 CRON[10926]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T05:42:00+00:00 srv-web-01 sshd[78980]: Failed password for deploy from 203.0.113.90 port 20875 ssh2
+2026-10-14T05:42:25+00:00 srv-web-01 sshd[78982]: Failed password for deploy from 203.0.113.90 port 3192 ssh2
+2026-10-14T05:42:50+00:00 srv-web-01 sshd[78994]: Failed password for deploy from 203.0.113.90 port 36963 ssh2
+2026-10-14T05:43:15+00:00 srv-web-01 sshd[79029]: Failed password for deploy from 203.0.113.90 port 33180 ssh2
+2026-10-14T05:43:40+00:00 srv-web-01 sshd[79058]: Failed password for deploy from 203.0.113.90 port 51067 ssh2
+2026-10-14T05:44:05+00:00 srv-web-01 sshd[79062]: Failed password for deploy from 203.0.113.90 port 50854 ssh2
+2026-10-14T05:44:30+00:00 srv-web-01 sshd[79066]: Failed password for deploy from 203.0.113.90 port 27568 ssh2
+2026-10-14T05:44:55+00:00 srv-web-01 sshd[79068]: Failed password for deploy from 203.0.113.90 port 28441 ssh2
+2026-10-14T05:45:20+00:00 srv-web-01 sshd[79107]: Accepted password for deploy from 203.0.113.90 port 9522 ssh2
+2026-10-14T05:45:20+00:00 srv-web-01 sshd[79120]: pam_unix(sshd:session): session opened for user deploy by (uid=0)
+2026-10-14T06:00:49+00:00 srv-db-01 sshd[12321]: Accepted publickey for akim from 10.20.2.49 port 27815 ssh2
+2026-10-14T06:00:49+00:00 srv-db-01 sshd[12359]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T06:03:00+00:00 srv-app-01 sudo:     deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/useradd -m svcmon
+2026-10-14T06:03:01+00:00 srv-app-01 useradd[79136]: new user: name=svcmon, UID=1007, GID=1007, home=/home/svcmon, shell=/bin/bash
+2026-10-14T06:03:20+00:00 srv-app-01 sudo:     deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/sbin/usermod -aG sudo svcmon
+2026-10-14T06:03:21+00:00 srv-app-01 usermod[79158]: add 'svcmon' to group 'sudo'
+2026-10-14T06:17:00+00:00 srv-app-01 CRON[12473]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T06:17:05+00:00 srv-web-01 sshd[12448]: Failed password for invalid user test from 192.0.2.188 port 18226 ssh2
+2026-10-14T06:17:08+00:00 srv-web-01 sshd[12457]: Failed password for invalid user admin from 192.0.2.188 port 13369 ssh2
+2026-10-14T06:40:47+00:00 srv-db-01 sshd[12374]: Failed password for rpatel from 10.20.2.49 port 13298 ssh2
+2026-10-14T06:40:55+00:00 srv-db-01 sshd[12383]: Accepted publickey for rpatel from 10.20.2.49 port 6725 ssh2
+2026-10-14T06:40:56+00:00 srv-db-01 sshd[12409]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T06:42:21+00:00 srv-db-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T07:01:37+00:00 srv-db-01 sshd[16327]: Accepted publickey for rpatel from 10.20.2.49 port 44209 ssh2
+2026-10-14T07:01:38+00:00 srv-db-01 sshd[16359]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T07:01:44+00:00 srv-db-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T07:11:23+00:00 srv-app-01 sshd[16540]: Accepted publickey for rpatel from 10.20.2.49 port 38002 ssh2
+2026-10-14T07:11:24+00:00 srv-app-01 sshd[16542]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T07:12:09+00:00 srv-bastion-01 sshd[16478]: Accepted publickey for jwalker from 10.20.2.49 port 24415 ssh2
+2026-10-14T07:12:09+00:00 srv-bastion-01 sshd[16510]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T07:12:43+00:00 srv-bastion-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T07:16:05+00:00 srv-app-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T07:17:00+00:00 srv-bastion-01 CRON[16602]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T07:23:19+00:00 srv-app-01 sshd[16433]: Accepted publickey for jwalker from 10.20.2.49 port 31439 ssh2
+2026-10-14T07:23:19+00:00 srv-app-01 sshd[16464]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T07:24:13+00:00 srv-web-01 sshd[16601]: Failed password for invalid user admin from 192.0.2.172 port 58653 ssh2
+2026-10-14T07:29:59+00:00 srv-bastion-01 sshd[16566]: Accepted publickey for akim from 10.20.2.49 port 31610 ssh2
+2026-10-14T07:30:00+00:00 srv-bastion-01 sshd[16573]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T07:33:26+00:00 srv-bastion-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T07:46:29+00:00 srv-app-01 sshd[16384]: Accepted publickey for akim from 10.20.2.49 port 29566 ssh2
+2026-10-14T07:46:29+00:00 srv-app-01 sshd[16412]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T07:50:33+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T08:00:38+00:00 srv-bastion-01 sshd[20672]: Accepted publickey for jwalker from 10.20.2.49 port 26204 ssh2
+2026-10-14T08:00:38+00:00 srv-bastion-01 sshd[20679]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T08:05:27+00:00 srv-bastion-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T08:17:00+00:00 srv-bastion-01 CRON[20993]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T08:22:05+00:00 srv-bastion-01 sshd[20947]: Failed password for invalid user ubuntu from 203.0.113.222 port 49814 ssh2
+2026-10-14T08:31:43+00:00 srv-bastion-01 sshd[20928]: Failed password for invalid user admin from 192.0.2.119 port 1734 ssh2
+2026-10-14T08:32:43+00:00 srv-bastion-01 sshd[20833]: Accepted publickey for akim from 10.20.2.49 port 60096 ssh2
+2026-10-14T08:32:44+00:00 srv-bastion-01 sshd[20851]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T08:35:06+00:00 srv-web-01 sshd[20765]: Accepted publickey for rpatel from 10.20.2.49 port 14013 ssh2
+2026-10-14T08:35:07+00:00 srv-web-01 sshd[20778]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T08:37:25+00:00 srv-web-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T08:40:03+00:00 srv-db-01 sshd[20878]: Accepted publickey for jwalker from 10.20.2.49 port 2901 ssh2
+2026-10-14T08:40:03+00:00 srv-db-01 sshd[20915]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T08:42:22+00:00 srv-web-01 sshd[20712]: Accepted publickey for rpatel from 10.20.2.49 port 21550 ssh2
+2026-10-14T08:42:22+00:00 srv-web-01 sshd[20740]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T08:45:31+00:00 srv-web-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T08:50:34+00:00 srv-bastion-01 sshd[20953]: Failed password for invalid user test from 203.0.113.239 port 61402 ssh2
+2026-10-14T08:50:37+00:00 srv-bastion-01 sshd[20964]: Failed password for invalid user test from 203.0.113.239 port 29902 ssh2
+2026-10-14T08:59:18+00:00 srv-bastion-01 sshd[20804]: Accepted publickey for rpatel from 10.20.2.49 port 45984 ssh2
+2026-10-14T08:59:19+00:00 srv-bastion-01 sshd[20812]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T09:04:06+00:00 srv-web-01 sshd[25513]: Failed password for invalid user admin from 203.0.113.239 port 7405 ssh2
+2026-10-14T09:16:46+00:00 srv-web-01 sshd[25248]: Failed password for mchen from 10.20.2.49 port 13300 ssh2
+2026-10-14T09:16:54+00:00 srv-web-01 sshd[25251]: Accepted publickey for mchen from 10.20.2.49 port 28300 ssh2
+2026-10-14T09:16:55+00:00 srv-web-01 sshd[25252]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T09:17:00+00:00 srv-web-01 CRON[25612]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T09:33:43+00:00 srv-app-01 sshd[25349]: Accepted publickey for akim from 10.20.2.49 port 44260 ssh2
+2026-10-14T09:33:44+00:00 srv-app-01 sshd[25364]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T09:35:10+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T09:45:42+00:00 srv-web-01 sshd[25447]: Failed password for jwalker from 10.20.2.49 port 64556 ssh2
+2026-10-14T09:45:50+00:00 srv-web-01 sshd[25479]: Accepted publickey for jwalker from 10.20.2.49 port 60435 ssh2
+2026-10-14T09:45:51+00:00 srv-web-01 sshd[25489]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T09:50:00+00:00 srv-bastion-01 sshd[25570]: Failed password for invalid user oracle from 192.0.2.104 port 44978 ssh2
+2026-10-14T09:50:03+00:00 srv-bastion-01 sshd[25573]: Failed password for invalid user admin from 192.0.2.104 port 64705 ssh2
+2026-10-14T09:52:24+00:00 srv-db-01 sshd[25397]: Accepted publickey for mchen from 10.20.2.49 port 11594 ssh2
+2026-10-14T09:52:24+00:00 srv-db-01 sshd[25407]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T09:54:45+00:00 srv-app-01 sshd[25270]: Accepted publickey for akim from 10.20.2.49 port 46517 ssh2
+2026-10-14T09:54:46+00:00 srv-app-01 sshd[25310]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T09:55:37+00:00 srv-db-01 sshd[25209]: Accepted publickey for jwalker from 10.20.2.49 port 37819 ssh2
+2026-10-14T09:55:38+00:00 srv-db-01 sshd[25237]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T09:55:50+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T09:56:04+00:00 srv-db-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T09:56:08+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T09:58:21+00:00 srv-bastion-01 sshd[25544]: Failed password for invalid user ubuntu from 203.0.113.248 port 37945 ssh2
+2026-10-14T09:58:24+00:00 srv-bastion-01 sshd[25554]: Failed password for invalid user admin from 203.0.113.248 port 19472 ssh2
+2026-10-14T10:08:33+00:00 srv-web-01 sshd[30185]: Accepted publickey for akim from 10.20.2.49 port 44450 ssh2
+2026-10-14T10:08:34+00:00 srv-web-01 sshd[30206]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T10:11:24+00:00 srv-bastion-01 sshd[30075]: Accepted publickey for rpatel from 10.20.2.49 port 24494 ssh2
+2026-10-14T10:11:24+00:00 srv-bastion-01 sshd[30085]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T10:14:01+00:00 srv-bastion-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T10:14:13+00:00 srv-app-01 sshd[30147]: Accepted publickey for jwalker from 10.20.2.49 port 47948 ssh2
+2026-10-14T10:14:14+00:00 srv-app-01 sshd[30163]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T10:17:00+00:00 srv-db-01 CRON[30360]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T10:31:29+00:00 srv-app-01 sshd[30118]: Accepted publickey for rpatel from 10.20.2.49 port 57225 ssh2
+2026-10-14T10:31:29+00:00 srv-app-01 sshd[30140]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T10:33:00+00:00 srv-app-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T10:36:54+00:00 srv-web-01 sshd[30345]: Failed password for invalid user oracle from 203.0.113.215 port 6500 ssh2
+2026-10-14T10:47:04+00:00 srv-bastion-01 sshd[30283]: Accepted publickey for akim from 10.20.2.49 port 34025 ssh2
+2026-10-14T10:47:04+00:00 srv-bastion-01 sshd[30319]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T10:50:05+00:00 srv-bastion-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T10:59:12+00:00 srv-db-01 sshd[30210]: Accepted publickey for rpatel from 10.20.2.49 port 30262 ssh2
+2026-10-14T10:59:13+00:00 srv-db-01 sshd[30244]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T11:00:44+00:00 srv-bastion-01 sshd[34967]: Failed password for invalid user oracle from 192.0.2.194 port 13084 ssh2
+2026-10-14T11:02:37+00:00 srv-db-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T11:16:18+00:00 srv-web-01 sshd[34825]: Accepted publickey for jwalker from 10.20.2.49 port 42381 ssh2
+2026-10-14T11:16:19+00:00 srv-web-01 sshd[34844]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T11:17:00+00:00 srv-db-01 CRON[35035]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T11:18:34+00:00 srv-web-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T11:23:08+00:00 srv-bastion-01 sshd[34882]: Accepted publickey for akim from 10.20.2.49 port 52804 ssh2
+2026-10-14T11:23:09+00:00 srv-bastion-01 sshd[34884]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T11:27:43+00:00 srv-bastion-01 sshd[34995]: Failed password for invalid user admin from 192.0.2.142 port 19280 ssh2
+2026-10-14T11:27:46+00:00 srv-bastion-01 sshd[35013]: Failed password for invalid user ubuntu from 192.0.2.142 port 30465 ssh2
+2026-10-14T11:36:45+00:00 srv-web-01 sshd[34938]: Accepted publickey for mchen from 10.20.2.49 port 48746 ssh2
+2026-10-14T11:36:46+00:00 srv-web-01 sshd[34952]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T11:37:00+00:00 srv-bastion-01 sshd[34787]: Accepted publickey for rpatel from 10.20.2.49 port 53107 ssh2
+2026-10-14T11:37:00+00:00 srv-bastion-01 sshd[34797]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T11:37:16+00:00 srv-bastion-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T11:38:42+00:00 srv-web-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T11:55:57+00:00 srv-bastion-01 sshd[34874]: Accepted publickey for jwalker from 10.20.2.49 port 61892 ssh2
+2026-10-14T11:55:58+00:00 srv-bastion-01 sshd[34881]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T11:58:01+00:00 srv-app-01 sshd[34894]: Accepted publickey for mchen from 10.20.2.49 port 2454 ssh2
+2026-10-14T11:58:01+00:00 srv-app-01 sshd[34914]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T12:02:50+00:00 srv-app-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T12:06:23+00:00 srv-app-01 sshd[39593]: Accepted publickey for akim from 10.20.2.49 port 19038 ssh2
+2026-10-14T12:06:23+00:00 srv-app-01 sshd[39594]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T12:07:05+00:00 srv-app-01 sshd[39412]: Accepted publickey for akim from 10.20.2.49 port 64466 ssh2
+2026-10-14T12:07:06+00:00 srv-app-01 sshd[39443]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T12:09:58+00:00 srv-app-01 sshd[39448]: Accepted publickey for rpatel from 10.20.2.49 port 7616 ssh2
+2026-10-14T12:09:59+00:00 srv-app-01 sshd[39484]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T12:10:27+00:00 srv-web-01 sshd[39596]: Failed password for invalid user oracle from 192.0.2.148 port 31958 ssh2
+2026-10-14T12:12:38+00:00 srv-app-01 sshd[39379]: Accepted publickey for mchen from 10.20.2.49 port 49609 ssh2
+2026-10-14T12:12:39+00:00 srv-app-01 sshd[39404]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T12:13:22+00:00 srv-app-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T12:17:00+00:00 srv-db-01 CRON[39612]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T12:32:42+00:00 srv-app-01 sshd[39509]: Accepted publickey for akim from 10.20.2.49 port 64368 ssh2
+2026-10-14T12:32:42+00:00 srv-app-01 sshd[39525]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T12:35:36+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T12:46:26+00:00 srv-bastion-01 sshd[39553]: Accepted publickey for mchen from 10.20.2.49 port 49433 ssh2
+2026-10-14T12:46:26+00:00 srv-bastion-01 sshd[39554]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T12:47:57+00:00 srv-bastion-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T13:05:55+00:00 srv-bastion-01 sshd[44302]: Failed password for invalid user oracle from 192.0.2.129 port 45563 ssh2
+2026-10-14T13:17:00+00:00 srv-db-01 CRON[44336]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T13:19:57+00:00 srv-web-01 sshd[44115]: Accepted publickey for rpatel from 10.20.2.49 port 47478 ssh2
+2026-10-14T13:19:58+00:00 srv-web-01 sshd[44119]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T13:22:50+00:00 srv-db-01 sshd[44046]: Accepted publickey for mchen from 10.20.2.49 port 34104 ssh2
+2026-10-14T13:22:50+00:00 srv-db-01 sshd[44051]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T13:27:18+00:00 srv-web-01 sshd[44139]: Accepted publickey for jwalker from 10.20.2.49 port 33657 ssh2
+2026-10-14T13:27:19+00:00 srv-web-01 sshd[44172]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T13:32:09+00:00 srv-web-01 sshd[44089]: Accepted publickey for rpatel from 10.20.2.49 port 2275 ssh2
+2026-10-14T13:32:09+00:00 srv-web-01 sshd[44092]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T13:35:43+00:00 srv-web-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T13:40:37+00:00 srv-bastion-01 sshd[44077]: Accepted publickey for mchen from 10.20.2.49 port 53569 ssh2
+2026-10-14T13:40:38+00:00 srv-bastion-01 sshd[44084]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T13:44:05+00:00 srv-bastion-01 sshd[44235]: Failed password for invalid user oracle from 192.0.2.137 port 30127 ssh2
+2026-10-14T13:45:52+00:00 srv-web-01 sshd[44265]: Failed password for invalid user admin from 192.0.2.133 port 60082 ssh2
+2026-10-14T13:52:25+00:00 srv-db-01 sshd[44179]: Accepted publickey for akim from 10.20.2.49 port 57828 ssh2
+2026-10-14T13:52:25+00:00 srv-db-01 sshd[44209]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T13:56:16+00:00 srv-db-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T14:02:39+00:00 srv-web-01 sshd[49103]: Accepted publickey for mchen from 10.20.2.49 port 32889 ssh2
+2026-10-14T14:02:40+00:00 srv-web-01 sshd[49118]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T14:06:40+00:00 srv-web-01 sshd[49132]: Accepted publickey for rpatel from 10.20.2.49 port 52325 ssh2
+2026-10-14T14:06:40+00:00 srv-web-01 sshd[49162]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T14:08:06+00:00 srv-web-01 sshd[49016]: Accepted publickey for akim from 10.20.2.49 port 13727 ssh2
+2026-10-14T14:08:06+00:00 srv-web-01 sshd[49053]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T14:11:02+00:00 srv-web-01 sshd[49197]: Failed password for invalid user admin from 203.0.113.219 port 32984 ssh2
+2026-10-14T14:11:05+00:00 srv-web-01 sshd[49236]: Failed password for invalid user test from 203.0.113.219 port 3048 ssh2
+2026-10-14T14:17:00+00:00 srv-web-01 CRON[49247]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T14:22:17+00:00 srv-app-01 sshd[49059]: Accepted publickey for akim from 10.20.2.49 port 23331 ssh2
+2026-10-14T14:22:18+00:00 srv-app-01 sshd[49065]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T14:24:47+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T14:29:40+00:00 srv-app-01 sshd[48910]: Accepted publickey for rpatel from 10.20.2.49 port 53229 ssh2
+2026-10-14T14:29:41+00:00 srv-app-01 sshd[48929]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T14:30:10+00:00 srv-app-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T14:32:33+00:00 srv-web-01 sshd[49165]: Failed password for invalid user test from 192.0.2.137 port 53952 ssh2
+2026-10-14T14:44:27+00:00 srv-bastion-01 sshd[49168]: Failed password for invalid user ubuntu from 203.0.113.246 port 2063 ssh2
+2026-10-14T14:44:42+00:00 srv-app-01 sshd[48940]: Accepted publickey for akim from 10.20.2.49 port 12134 ssh2
+2026-10-14T14:44:42+00:00 srv-app-01 sshd[48977]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T14:48:44+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T15:07:09+00:00 srv-app-01 sshd[53546]: Accepted publickey for mchen from 10.20.2.49 port 6441 ssh2
+2026-10-14T15:07:09+00:00 srv-app-01 sshd[53557]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T15:09:01+00:00 srv-app-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T15:17:00+00:00 srv-bastion-01 CRON[53722]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T15:18:28+00:00 srv-db-01 sshd[53450]: Accepted publickey for rpatel from 10.20.2.49 port 57089 ssh2
+2026-10-14T15:18:28+00:00 srv-db-01 sshd[53451]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T15:22:49+00:00 srv-db-01 sshd[53413]: Accepted publickey for jwalker from 10.20.2.49 port 57004 ssh2
+2026-10-14T15:22:49+00:00 srv-db-01 sshd[53417]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T15:31:47+00:00 srv-app-01 sshd[53576]: Accepted publickey for akim from 10.20.2.49 port 51704 ssh2
+2026-10-14T15:31:47+00:00 srv-app-01 sshd[53591]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T15:32:24+00:00 srv-bastion-01 sshd[53619]: Failed password for invalid user test from 203.0.113.224 port 18509 ssh2
+2026-10-14T15:32:27+00:00 srv-bastion-01 sshd[53641]: Failed password for invalid user admin from 203.0.113.224 port 17693 ssh2
+2026-10-14T15:32:49+00:00 srv-web-01 sshd[53484]: Accepted publickey for jwalker from 10.20.2.49 port 46016 ssh2
+2026-10-14T15:32:49+00:00 srv-web-01 sshd[53514]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T15:34:53+00:00 srv-web-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T15:57:15+00:00 srv-web-01 sshd[53671]: Failed password for invalid user ubuntu from 203.0.113.212 port 32899 ssh2
+2026-10-14T15:57:18+00:00 srv-web-01 sshd[53703]: Failed password for invalid user ubuntu from 203.0.113.212 port 53215 ssh2
+2026-10-14T15:58:17+00:00 srv-web-01 sshd[53527]: Accepted publickey for mchen from 10.20.2.49 port 54351 ssh2
+2026-10-14T15:58:18+00:00 srv-web-01 sshd[53543]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T16:04:54+00:00 srv-bastion-01 sshd[57690]: Accepted publickey for rpatel from 10.20.2.49 port 30723 ssh2
+2026-10-14T16:04:54+00:00 srv-bastion-01 sshd[57714]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T16:06:25+00:00 srv-bastion-01 sshd[57582]: Accepted publickey for rpatel from 10.20.2.49 port 54564 ssh2
+2026-10-14T16:06:26+00:00 srv-bastion-01 sshd[57619]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T16:07:17+00:00 srv-bastion-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T16:17:00+00:00 srv-db-01 CRON[57825]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T16:22:39+00:00 srv-app-01 sshd[57553]: Accepted publickey for rpatel from 10.20.2.49 port 54375 ssh2
+2026-10-14T16:22:40+00:00 srv-app-01 sshd[57576]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T16:35:09+00:00 srv-bastion-01 sshd[57791]: Failed password for invalid user admin from 192.0.2.189 port 4149 ssh2
+2026-10-14T16:38:08+00:00 srv-db-01 sshd[57514]: Accepted publickey for rpatel from 10.20.2.49 port 53283 ssh2
+2026-10-14T16:38:09+00:00 srv-db-01 sshd[57550]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T16:40:09+00:00 srv-db-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T16:41:42+00:00 srv-db-01 sshd[57732]: Accepted publickey for jwalker from 10.20.2.49 port 45886 ssh2
+2026-10-14T16:41:42+00:00 srv-db-01 sshd[57735]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T16:44:26+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T16:46:29+00:00 srv-db-01 sshd[57635]: Accepted publickey for mchen from 10.20.2.49 port 42007 ssh2
+2026-10-14T16:46:30+00:00 srv-db-01 sshd[57659]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T16:50:50+00:00 srv-db-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T16:51:45+00:00 srv-bastion-01 sshd[57746]: Failed password for invalid user admin from 192.0.2.181 port 3692 ssh2
+2026-10-14T16:51:48+00:00 srv-bastion-01 sshd[57767]: Failed password for invalid user oracle from 192.0.2.181 port 62231 ssh2
+2026-10-14T17:03:21+00:00 srv-web-01 sshd[62306]: Failed password for invalid user test from 192.0.2.100 port 44050 ssh2
+2026-10-14T17:03:24+00:00 srv-web-01 sshd[62344]: Failed password for invalid user test from 192.0.2.100 port 38306 ssh2
+2026-10-14T17:03:27+00:00 srv-bastion-01 sshd[62266]: Accepted publickey for jwalker from 10.20.2.49 port 50861 ssh2
+2026-10-14T17:03:27+00:00 srv-bastion-01 sshd[62281]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T17:04:11+00:00 srv-bastion-01 sshd[62291]: Failed password for invalid user test from 192.0.2.112 port 32679 ssh2
+2026-10-14T17:04:14+00:00 srv-bastion-01 sshd[62304]: Failed password for invalid user admin from 192.0.2.112 port 48040 ssh2
+2026-10-14T17:08:15+00:00 srv-bastion-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T17:13:10+00:00 srv-bastion-01 sshd[62117]: Accepted publickey for jwalker from 10.20.2.49 port 17540 ssh2
+2026-10-14T17:13:10+00:00 srv-bastion-01 sshd[62157]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T17:17:00+00:00 srv-bastion-01 CRON[62352]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T17:19:12+00:00 srv-bastion-01 sshd[62226]: Accepted publickey for mchen from 10.20.2.49 port 39508 ssh2
+2026-10-14T17:19:12+00:00 srv-bastion-01 sshd[62247]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T17:19:29+00:00 srv-app-01 sshd[62047]: Accepted publickey for mchen from 10.20.2.49 port 56955 ssh2
+2026-10-14T17:19:30+00:00 srv-app-01 sshd[62087]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T17:30:16+00:00 srv-bastion-01 sshd[62179]: Accepted publickey for akim from 10.20.2.49 port 36064 ssh2
+2026-10-14T17:30:16+00:00 srv-bastion-01 sshd[62181]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T17:42:48+00:00 srv-app-01 sshd[62208]: Accepted publickey for jwalker from 10.20.2.49 port 30758 ssh2
+2026-10-14T17:42:49+00:00 srv-app-01 sshd[62214]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T17:43:22+00:00 srv-app-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T18:02:24+00:00 srv-web-01 sshd[66268]: Accepted publickey for akim from 10.20.2.49 port 54384 ssh2
+2026-10-14T18:02:24+00:00 srv-web-01 sshd[66299]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T18:03:37+00:00 srv-web-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T18:17:00+00:00 srv-app-01 CRON[66589]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T18:31:18+00:00 srv-web-01 sshd[66365]: Accepted publickey for rpatel from 10.20.2.49 port 3764 ssh2
+2026-10-14T18:31:18+00:00 srv-web-01 sshd[66380]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T18:34:11+00:00 srv-web-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T18:35:20+00:00 srv-web-01 sshd[66534]: Failed password for invalid user oracle from 192.0.2.156 port 19621 ssh2
+2026-10-14T18:35:23+00:00 srv-web-01 sshd[66553]: Failed password for invalid user test from 192.0.2.156 port 33116 ssh2
+2026-10-14T18:45:24+00:00 srv-app-01 sshd[66418]: Accepted publickey for akim from 10.20.2.49 port 36114 ssh2
+2026-10-14T18:45:24+00:00 srv-app-01 sshd[66442]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T18:46:28+00:00 srv-db-01 sshd[66318]: Accepted publickey for akim from 10.20.2.49 port 42004 ssh2
+2026-10-14T18:46:28+00:00 srv-db-01 sshd[66354]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T18:47:39+00:00 srv-db-01 sshd[66481]: Accepted publickey for jwalker from 10.20.2.49 port 41412 ssh2
+2026-10-14T18:47:40+00:00 srv-db-01 sshd[66514]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T18:50:00+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-10-14T18:50:07+00:00 srv-db-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T18:53:22+00:00 srv-app-01 sshd[66212]: Accepted publickey for rpatel from 10.20.2.49 port 61156 ssh2
+2026-10-14T18:53:23+00:00 srv-app-01 sshd[66248]: pam_unix(sshd:session): session opened for user rpatel by (uid=0)
+2026-10-14T18:54:48+00:00 srv-app-01 sudo:     rpatel : TTY=pts/0 ; PWD=/home/rpatel ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T19:03:05+00:00 srv-bastion-01 sshd[70764]: Accepted publickey for akim from 10.20.2.49 port 55581 ssh2
+2026-10-14T19:03:05+00:00 srv-bastion-01 sshd[70803]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T19:17:00+00:00 srv-web-01 CRON[71271]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T19:17:14+00:00 srv-bastion-01 sshd[71164]: Failed password for invalid user ubuntu from 203.0.113.218 port 36030 ssh2
+2026-10-14T19:17:17+00:00 srv-bastion-01 sshd[71181]: Failed password for invalid user oracle from 203.0.113.218 port 16817 ssh2
+2026-10-14T19:18:40+00:00 srv-web-01 sshd[70857]: Accepted publickey for akim from 10.20.2.49 port 51339 ssh2
+2026-10-14T19:18:41+00:00 srv-web-01 sshd[70876]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T19:20:44+00:00 srv-web-01 sshd[71248]: Failed password for invalid user test from 192.0.2.162 port 64609 ssh2
+2026-10-14T19:20:47+00:00 srv-web-01 sshd[71264]: Failed password for invalid user admin from 192.0.2.162 port 24884 ssh2
+2026-10-14T19:21:28+00:00 srv-db-01 sshd[70916]: Failed password for akim from 10.20.2.49 port 43226 ssh2
+2026-10-14T19:21:36+00:00 srv-db-01 sshd[70931]: Accepted publickey for akim from 10.20.2.49 port 14657 ssh2
+2026-10-14T19:21:37+00:00 srv-db-01 sshd[70968]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T19:24:08+00:00 srv-db-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog
+2026-10-14T19:30:09+00:00 srv-bastion-01 sshd[71220]: Failed password for invalid user admin from 192.0.2.123 port 64888 ssh2
+2026-10-14T19:30:12+00:00 srv-bastion-01 sshd[71227]: Failed password for invalid user test from 192.0.2.123 port 51582 ssh2
+2026-10-14T19:37:42+00:00 srv-db-01 sshd[71002]: Failed password for jwalker from 10.20.2.49 port 47933 ssh2
+2026-10-14T19:37:50+00:00 srv-db-01 sshd[71024]: Accepted publickey for jwalker from 10.20.2.49 port 43498 ssh2
+2026-10-14T19:37:51+00:00 srv-db-01 sshd[71058]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T19:37:55+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T19:42:40+00:00 srv-app-01 sshd[70816]: Accepted publickey for akim from 10.20.2.49 port 21054 ssh2
+2026-10-14T19:42:41+00:00 srv-app-01 sshd[70838]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T19:43:10+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T19:58:06+00:00 srv-db-01 sshd[71095]: Accepted publickey for jwalker from 10.20.2.49 port 43710 ssh2
+2026-10-14T19:58:07+00:00 srv-db-01 sshd[71130]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T19:59:36+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/journalctl -u app
+2026-10-14T20:00:11+00:00 srv-bastion-01 sshd[72642]: Failed password for invalid user ubuntu from 203.0.113.239 port 21026 ssh2
+2026-10-14T20:00:14+00:00 srv-bastion-01 sshd[72647]: Failed password for invalid user admin from 203.0.113.239 port 45404 ssh2
+2026-10-14T20:08:50+00:00 srv-bastion-01 sshd[72638]: Failed password for invalid user admin from 203.0.113.206 port 63941 ssh2
+2026-10-14T20:17:00+00:00 srv-app-01 CRON[72656]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T20:46:03+00:00 srv-db-01 sshd[72585]: Accepted publickey for akim from 10.20.2.49 port 63730 ssh2
+2026-10-14T20:46:04+00:00 srv-db-01 sshd[72608]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T20:46:41+00:00 srv-web-01 sshd[72548]: Accepted publickey for akim from 10.20.2.49 port 37295 ssh2
+2026-10-14T20:46:41+00:00 srv-web-01 sshd[72558]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T20:50:31+00:00 srv-db-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T21:17:00+00:00 srv-app-01 CRON[74291]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T21:25:27+00:00 srv-web-01 sshd[74108]: Accepted publickey for mchen from 10.20.2.49 port 14236 ssh2
+2026-10-14T21:25:27+00:00 srv-web-01 sshd[74135]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T21:25:36+00:00 srv-web-01 sshd[74221]: Failed password for invalid user test from 203.0.113.202 port 15414 ssh2
+2026-10-14T21:26:06+00:00 srv-bastion-01 sshd[74252]: Failed password for invalid user ubuntu from 203.0.113.235 port 54573 ssh2
+2026-10-14T21:26:09+00:00 srv-bastion-01 sshd[74271]: Failed password for invalid user test from 203.0.113.235 port 36744 ssh2
+2026-10-14T21:26:51+00:00 srv-web-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T21:29:38+00:00 srv-app-01 sshd[74151]: Accepted publickey for mchen from 10.20.2.49 port 6608 ssh2
+2026-10-14T21:29:39+00:00 srv-app-01 sshd[74186]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T21:30:34+00:00 srv-app-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T21:43:15+00:00 srv-web-01 sshd[74233]: Failed password for invalid user test from 192.0.2.158 port 61715 ssh2
+2026-10-14T22:00:09+00:00 srv-app-01 sshd[75742]: Accepted publickey for mchen from 10.20.2.49 port 55240 ssh2
+2026-10-14T22:00:10+00:00 srv-app-01 sshd[75776]: pam_unix(sshd:session): session opened for user mchen by (uid=0)
+2026-10-14T22:03:23+00:00 srv-app-01 sudo:     mchen : TTY=pts/0 ; PWD=/home/mchen ; USER=root ; COMMAND=/usr/bin/docker ps
+2026-10-14T22:14:50+00:00 srv-web-01 sshd[75680]: Accepted publickey for jwalker from 10.20.2.49 port 50884 ssh2
+2026-10-14T22:14:51+00:00 srv-web-01 sshd[75711]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T22:17:00+00:00 srv-app-01 CRON[75902]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T22:43:18+00:00 srv-web-01 sshd[75865]: Failed password for invalid user oracle from 203.0.113.241 port 20063 ssh2
+2026-10-14T22:43:21+00:00 srv-web-01 sshd[75870]: Failed password for invalid user ubuntu from 203.0.113.241 port 63145 ssh2
+2026-10-14T22:44:14+00:00 srv-bastion-01 sshd[75796]: Failed password for invalid user ubuntu from 203.0.113.209 port 43471 ssh2
+2026-10-14T22:44:17+00:00 srv-bastion-01 sshd[75813]: Failed password for invalid user ubuntu from 203.0.113.209 port 32655 ssh2
+2026-10-14T22:56:56+00:00 srv-bastion-01 sshd[75820]: Failed password for invalid user oracle from 192.0.2.105 port 60965 ssh2
+2026-10-14T22:56:59+00:00 srv-bastion-01 sshd[75834]: Failed password for invalid user ubuntu from 192.0.2.105 port 7585 ssh2
+2026-10-14T23:17:00+00:00 srv-app-01 CRON[77324]: pam_unix(cron:session): session opened for user root by (uid=0)
+2026-10-14T23:17:24+00:00 srv-db-01 sshd[77234]: Accepted publickey for jwalker from 10.20.2.49 port 1746 ssh2
+2026-10-14T23:17:25+00:00 srv-db-01 sshd[77269]: pam_unix(sshd:session): session opened for user jwalker by (uid=0)
+2026-10-14T23:20:51+00:00 srv-db-01 sudo:     jwalker : TTY=pts/0 ; PWD=/home/jwalker ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+2026-10-14T23:23:19+00:00 srv-app-01 sshd[77193]: Accepted publickey for akim from 10.20.2.49 port 48458 ssh2
+2026-10-14T23:23:20+00:00 srv-app-01 sshd[77209]: pam_unix(sshd:session): session opened for user akim by (uid=0)
+2026-10-14T23:27:50+00:00 srv-web-01 sshd[77271]: Failed password for invalid user ubuntu from 203.0.113.200 port 42487 ssh2
+2026-10-14T23:27:53+00:00 srv-web-01 sshd[77290]: Failed password for invalid user ubuntu from 203.0.113.200 port 26294 ssh2
+2026-10-14T23:27:56+00:00 srv-app-01 sudo:     akim : TTY=pts/0 ; PWD=/home/akim ; USER=root ; COMMAND=/usr/bin/tail -n 100 /var/log/syslog

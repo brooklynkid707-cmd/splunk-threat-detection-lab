@@ -1,0 +1,13 @@
+ip,threat_category,threat_source,confidence,first_seen,notes
+203.0.113.66,c2,lab-threat-feed,high,2026-09-28,Cobalt Strike team server (synthetic)
+203.0.113.150,c2,lab-threat-feed,high,2026-09-30,Sliver C2 (synthetic)
+203.0.113.151,malware_distribution,lab-threat-feed,medium,2026-10-01,Hosts second-stage payloads (synthetic)
+203.0.113.152,scanner,lab-threat-feed,low,2026-10-02,Mass SSH scanner (synthetic)
+203.0.113.153,phishing,lab-threat-feed,medium,2026-10-03,Credential harvesting page (synthetic)
+198.51.100.250,c2,lab-threat-feed,high,2026-10-04,Tor exit used for C2 (synthetic)
+198.51.100.251,exfil,lab-threat-feed,high,2026-10-05,Known data exfiltration drop host (synthetic)
+198.51.100.252,scanner,lab-threat-feed,low,2026-10-06,RDP brute forcer (synthetic)
+192.0.2.200,c2,lab-threat-feed,medium,2026-10-07,Empire listener (synthetic)
+192.0.2.201,malware_distribution,lab-threat-feed,medium,2026-10-08,Fake installer CDN (synthetic)
+192.0.2.202,phishing,lab-threat-feed,low,2026-10-09,Typosquat landing page (synthetic)
+192.0.2.203,exfil,lab-threat-feed,medium,2026-10-10,Anonymous file share abused for exfil (synthetic)

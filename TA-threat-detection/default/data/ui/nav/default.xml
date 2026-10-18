@@ -1,0 +1,6 @@
+<nav search_view="search">
+  <view name="soc_overview" default="true" />
+  <view name="search" />
+  <view name="alerts" />
+  <view name="reports" />
+</nav>

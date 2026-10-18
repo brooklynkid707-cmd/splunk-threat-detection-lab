@@ -1,0 +1,12 @@
+port,protocol,description,associated_tooling
+4444,tcp,Metasploit default reverse shell listener,metasploit
+1337,tcp,Common hacker-culture listener port,various
+31337,tcp,Back Orifice / elite listener,back_orifice
+6667,tcp,IRC - legacy botnet command channel,irc_bots
+6666,tcp,IRC alternate - legacy botnet command channel,irc_bots
+9001,tcp,Tor ORPort default,tor
+9050,tcp,Tor SOCKS proxy default,tor
+5555,tcp,Android ADB / common reverse shell port,adb_reverse_shell
+2222,tcp,Alternate SSH often used for tunnels,ssh_tunnel
+8888,tcp,Common C2 framework HTTP listener,various
+50050,tcp,Cobalt Strike team server default,cobalt_strike

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Generated at run time (the committed sample set lives in data/sample/)
+data/generated/
+results.json
+*.tgz
+
+# Splunk local overrides are per-environment
+TA-threat-detection/local/
+TA-threat-detection/samples/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

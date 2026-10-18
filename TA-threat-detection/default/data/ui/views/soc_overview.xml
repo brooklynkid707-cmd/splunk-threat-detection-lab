@@ -1,0 +1,216 @@
+<form version="1.1" theme="dark">
+  <label>SOC Overview</label>
+  <description>Authentication, endpoint and network health for the lab data sources, plus the alerts raised by the TDL-* scheduled detections.</description>
+
+  <fieldset submitButton="false" autoRun="true">
+    <input type="time" token="time">
+      <label>Time range</label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="dropdown" token="src_filter" searchWhenChanged="true">
+      <label>Source IP</label>
+      <choice value="*">All</choice>
+      <default>*</default>
+      <prefix>src_ip="</prefix>
+      <suffix>"</suffix>
+      <fieldForLabel>src_ip</fieldForLabel>
+      <fieldForValue>src_ip</fieldForValue>
+      <search>
+        <query>eventtype=windows_failed_logon | stats count by src_ip | sort -count | head 25</query>
+        <earliest>$time.earliest$</earliest>
+        <latest>$time.latest$</latest>
+      </search>
+    </input>
+  </fieldset>
+
+  <!-- Row 1: key numbers -->
+  <row>
+    <panel>
+      <title>Failed logons (Windows)</title>
+      <single>
+        <search>
+          <query>eventtype=windows_failed_logon $src_filter$ | stats count</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="rangeColors">["0x53a051","0xf8be34","0xdc4e41"]</option>
+        <option name="rangeValues">[50,200]</option>
+        <option name="useColors">1</option>
+        <option name="underLabel">EventCode 4625</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Failed SSH logons (Linux)</title>
+      <single>
+        <search>
+          <query>eventtype=linux_ssh_failed $src_filter$ | stats count</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="rangeColors">["0x53a051","0xf8be34","0xdc4e41"]</option>
+        <option name="rangeValues">[50,200]</option>
+        <option name="useColors">1</option>
+        <option name="underLabel">sshd Failed password</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Threat-intel matches</title>
+      <single>
+        <search>
+          <query>`firewall` $src_filter$ | lookup known_bad_ips ip AS dest_ip OUTPUT threat_category | where isnotnull(threat_category) | stats dc(src_ip)</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="rangeColors">["0x53a051","0xdc4e41"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="useColors">1</option>
+        <option name="underLabel">hosts talking to known-bad IPs</option>
+      </single>
+    </panel>
+    <panel>
+      <title>LSASS access (non-allowlisted)</title>
+      <single>
+        <search>
+          <query>eventtype=sysmon_process_access TargetImage="*\\lsass.exe" | search NOT `lsass_access_allowlist` | stats count</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">block</option>
+        <option name="rangeColors">["0x53a051","0xdc4e41"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="useColors">1</option>
+        <option name="underLabel">Sysmon EventCode 10</option>
+      </single>
+    </panel>
+  </row>
+
+  <!-- Row 2: authentication trend and top sources -->
+  <row>
+    <panel>
+      <title>Authentication outcomes over time</title>
+      <chart>
+        <search>
+          <query>(eventtype=windows_failed_logon OR eventtype=windows_successful_logon) $src_filter$ | timechart span=15m count by action</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.fieldColors">{"failure":0xdc4e41,"success":0x53a051}</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top failed-logon sources (Windows + Linux)</title>
+      <table>
+        <search>
+          <query>(eventtype=windows_failed_logon OR eventtype=linux_ssh_failed) $src_filter$ | stats count as failures, dc(user) as unique_users, values(sourcetype) as sources by src_ip | lookup ip_geo ip AS src_ip OUTPUT country | sort -failures | head 15</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="drilldown">cell</option>
+        <format type="color" field="failures">
+          <colorPalette type="minMidMax" minColor="#FFFFFF" maxColor="#DC4E41"></colorPalette>
+          <scale type="minMidMax"></scale>
+        </format>
+        <drilldown>
+          <set token="form.src_filter">$row.src_ip$</set>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+
+  <!-- Row 3: endpoint -->
+  <row>
+    <panel>
+      <title>Process creation by host (Sysmon 1 + 4688)</title>
+      <chart>
+        <search>
+          <query>`process_creation` | timechart span=30m count by host limit=10 useother=true</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Rare parent/child process pairs (last 24h)</title>
+      <table>
+        <search>
+          <query>eventtype=sysmon_process_creation | eval parent_name=lower(replace(parent_process, "^.*\\\\", "")), child_name=lower(replace(process, "^.*\\\\", "")) | rare limit=15 parent_name, child_name | search NOT `rare_parent_child_allowlist`</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="count">15</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- Row 4: network -->
+  <row>
+    <panel>
+      <title>Outbound bytes per hour (top 10 hosts)</title>
+      <chart>
+        <search>
+          <query>eventtype=firewall_outbound_allowed $src_filter$ | timechart span=1h sum(bytes_out) as bytes_out by src_ip limit=10 useother=false</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="charting.chart">area</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">bottom</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Non-standard outbound ports</title>
+      <table>
+        <search>
+          <query>eventtype=firewall_outbound_allowed $src_filter$ | search NOT `common_ports` | stats count as connections, dc(src_ip) as sources, values(src_ip) as src_ips by dest_port | lookup known_bad_ports port AS dest_port OUTPUTNEW description | sort connections</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+    <panel>
+      <title>Longest DNS query names</title>
+      <table>
+        <search>
+          <query>`dns` $src_filter$ | eval query_length=len(query) | rex field=query "(?&lt;base_domain&gt;[^.]+\.[^.]+)$" | stats max(query_length) as max_length, count as queries, dc(query) as unique_names by src_ip, base_domain | sort -max_length | head 10</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- Row 5: what the scheduled detections have fired -->
+  <row>
+    <panel>
+      <title>Detections fired (triggered alerts from TDL-* scheduled searches)</title>
+      <table>
+        <search>
+          <query>| rest /services/alerts/fired_alerts/- splunk_server=local | search savedsearch_name="TDL-*" | eval fired=strftime(trigger_time, "%Y-%m-%d %H:%M:%S") | table fired, savedsearch_name, severity, triggered_alerts | sort -fired</query>
+          <earliest>$time.earliest$</earliest>
+          <latest>$time.latest$</latest>
+        </search>
+        <option name="count">20</option>
+        <format type="color" field="severity">
+          <colorPalette type="map">{"5":#DC4E41,"4":#F1813F,"3":#F8BE34,"2":#53A051}</colorPalette>
+        </format>
+      </table>
+    </panel>
+  </row>
+</form>
